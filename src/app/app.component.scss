@@ -1,0 +1,13 @@
+.ion-page {
+    left: 20px;
+    right: 20px;
+    top: 0;
+    bottom: 0px;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-between;
+    contain: layout size style;
+    overflow: hidden;
+    z-index: 0;
+}

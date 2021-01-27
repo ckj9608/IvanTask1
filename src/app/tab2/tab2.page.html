@@ -1,17 +1,127 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
-  </ion-toolbar>
+ 
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
+      <ion-title size="large">Tab 1</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <div class = "container">
+    <h1>Deliveries</h1>
+    <ion-toolbar class="xyz">
+    <ion-segment value="1" (ionChange)="segmentChanged($event)" [(ngModel)]="segment">
+      <ion-segment-button value="1">
+        <ion-label>Active</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="2">
+        <ion-label>Complete</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+    </ion-toolbar>
+    <div [ngSwitch]="segment">
+      <div *ngSwitchCase="'1'">
+        <ion-list><ion-item lines="none" class="remove_inner_bottom">
+          <ion-fab  horizontal="start">
+            <ion-fab-button  class="xxx ddd">
+              <ion-icon style ="color: red;" name="alert-outline"></ion-icon>
+              
+            </ion-fab-button>
+            
+          </ion-fab>
+          <ion-label style="margin-left: 68px; font-size: 15px;">Report Mishap</ion-label>
+        </ion-item>
+      
+      </ion-list>
+      <div>
+        <ion-grid>
+          <ion-row style="margin-top: 10px;font-weight: bolder; margin-left: 25px;">
+            Same Route Orders
+          </ion-row>
+          <ion-row>
+            <ion-button class = "show">Show Direction</ion-button>
+          </ion-row>
+        </ion-grid>
+        <div class ="card">
+          <ion-grid>
+            <ion-row>
+              <ion-col style="font-size: 13px;font-weight: bolder;">
+                Order Number: 3930
+              </ion-col>
+              <ion-col style="font-size: 12px;font-weight: lighter;">Time: 01:24 pm</ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col style="text-align: left; font-size: 13px;">
+                DROPOFF:
+              </ion-col>
+              <ion-col style ="font-size: 13px;font-weight: bolder;text-align: left;margin-right: 109px;">Alex Turner</ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col style="text-align: left; font-size: 10px;">
+                PAYMENT STATUS:
+              </ion-col>
+              <ion-col style ="font-size: 11px;font-weight: bolder;text-align: left;margin-right: 70px;">C.O.D</ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col style="text-align: left;font-weight: bolder;font-size: 11px;">
+              BILL:$24.06
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col><ion-icon name="call" style="color:green;"></ion-icon></ion-col>
+              <ion-col style="text-align: left;font-weight: bolder;font-size: 11px;margin-right: 31px;">Call Alex</ion-col>
+              <ion-col style="text-align: right;font-weight: bolder;font-size: 11px; color:green;">Order Details</ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col style="font-weight: bolder;font-size: 13px;"><ion-icon style="color: green;" name="checkmark-circle-outline"></ion-icon>Delievered</ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+        <div class ="card">
+          <ion-grid>
+            <ion-row>
+              <ion-col style="font-size: 13px;font-weight: bolder;">
+                Order Number: 3930
+              </ion-col>
+              <ion-col style="font-size: 12px;font-weight: lighter;">Time: 01:24 pm</ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col style="text-align: left; font-size: 13px;">
+                DROPOFF:
+              </ion-col>
+              <ion-col style ="font-size: 13px;font-weight: bolder;text-align: left;margin-right: 109px;">Alex Turner</ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col style="text-align: left; font-size: 10px;">
+                PAYMENT STATUS:
+              </ion-col>
+              <ion-col style ="font-size: 11px;font-weight: bolder;text-align: left;margin-right: 70px;">C.O.D</ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col style="text-align: left;font-weight: bolder;font-size: 11px;">
+              BILL:$24.06
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col><ion-icon name="call" style="color:green;"></ion-icon></ion-col>
+              <ion-col style="text-align: left;font-weight: bolder;font-size: 11px;margin-right: 31px;">Call Alex</ion-col>
+              <ion-col style="text-align: right;font-weight: bolder;font-size: 11px; color:green;">Order Details</ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col style="font-weight: bolder;font-size: 13px;"><ion-icon style="color: green;" name="checkmark-circle-outline"></ion-icon>Delievered</ion-col>
+            </ion-row>
+          </ion-grid>
+        </div>
+      </div>
+              
+           
+            </div>
+      
+    </div>
+    
+  </div>
+ 
+  
 </ion-content>

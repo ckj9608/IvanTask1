@@ -1,0 +1,59 @@
+.container {
+    text-align: center;
+  
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 12%;
+    color: #5a5858;
+  //  transform: translateY(-50%);
+  }
+  h1{
+      font-size: 22px;
+  }
+  .xyz{
+    margin-top: 28px;
+    left: 5%;
+    /* right: 15px; */
+    width: 90%;
+  }
+  ion-label{
+      text-transform: capitalize;
+  }
+  ion-segment-button {
+ //   --background-checked: var(--ion-color-success);
+ --background-checked: var(--ion-toolbar-segment-background-checked, none);
+   // --color-checked: var(--ion-color-success-contrast);
+    --color-checked: var(--ion-toolbar-segment-color-checked, var(--ion-color-success, #08972c));
+  }
+  .xxx{
+    height: 35px;
+    width: 37px;
+      color: red;
+  }
+  .ddd{
+    --background:white;
+    margin-bottom: 15%;
+    margin-left: 8px;
+    margin-top: 10px;
+    margin-bottom: 15%;
+  }
+  .remove_inner_bottom{
+    --inner-border-width: 0; // this removes the inner border width
+ }
+ .show{
+    width: 90%;
+    margin-left: 15px;
+    text-transform: capitalize;
+    margin-top: 19px;
+    --border-radius: 5px;
+    --background: #66c166;
+ }
+ .card{
+    height: auto;
+    border-radius: 8px;
+    width: 88%;
+    margin-top: 5px;
+    margin-left: 19px;
+    background-color: #eef0f3;
+ }
